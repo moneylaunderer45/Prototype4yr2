@@ -7,7 +7,8 @@ public class Deadpool : MonoBehaviour
 
     public float speed;
     private Rigidbody DeadpoolRb;
-    private GameObject Wolverine; 
+    private GameObject Wolverine;
+    public int DeadpoolCount;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,11 @@ public class Deadpool : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.y < -10)
+        {
+          Destroy(gameObject); 
+        }
         Vector3 lookDirection = (Wolverine.transform.position - transform.position).normalized;
-        DeadpoolRb.AddForce(lookDirection * speed);   
+        DeadpoolRb.AddForce(lookDirection * speed); 
     }
 }

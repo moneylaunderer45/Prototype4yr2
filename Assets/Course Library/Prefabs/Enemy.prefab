@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4125571980536605523}
   - component: {fileID: 5347602483362897970}
   m_Layer: 0
-  m_Name: Deadpool
+  m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
